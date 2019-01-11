@@ -7,10 +7,11 @@ import org.springframework.context.annotation.*;
 
 @PropertySource("classpath:application.properties")
 @Configuration
+@Import(value = {SpringConfig1.class})
 public class SpringConfig {
 
     public SpringConfig(){
-        System.out.println("配置容器初始化");
+        System.out.println("配置初始化。。。");
     }
 
     @Scope("prototype")
