@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 @PropertySource("classpath:application.properties")
 public class BaseServiceImpl implements BaseService {
 
-    @Value("${name}")
+    @Value("${root.name}")
     private String name;
 
-    @Value("${password}")
+    @Value("${root.password}")
     private String password;
 
-    @Value("${id}")
+    @Value("${test.id}")
     private String id;
 
     @Override
@@ -29,6 +29,5 @@ public class BaseServiceImpl implements BaseService {
     @Override
     public void saveUser() {
         System.out.println("save user" + id);
-        System.out.println(1/0);
     }
 }

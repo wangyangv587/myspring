@@ -24,4 +24,6 @@
         </aop:aspect>
     </aop:config>
 
+    <import resource="classpath:spring-tx.xml"/>
+
 </beans>

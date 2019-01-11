@@ -4,6 +4,8 @@ import com.kaikeba.service.BaseService;
 import com.kaikeba.service.impl.BaseServiceImpl;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.function.Consumer;
+
 /**
  * Hello world!
  */
