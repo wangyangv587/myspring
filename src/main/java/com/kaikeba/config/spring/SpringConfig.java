@@ -11,7 +11,7 @@ import org.springframework.context.annotation.*;
 public class SpringConfig {
 
     public SpringConfig(){
-        System.out.println("配置初始化。。。");
+
     }
 
     @Scope("prototype")

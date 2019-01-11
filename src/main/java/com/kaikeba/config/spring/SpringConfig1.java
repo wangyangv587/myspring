@@ -11,6 +11,6 @@ import org.springframework.context.annotation.Configuration;
 public class SpringConfig1 {
 
     public SpringConfig1(){
-        System.out.println("配置初始化1。。。");
+
     }
 }

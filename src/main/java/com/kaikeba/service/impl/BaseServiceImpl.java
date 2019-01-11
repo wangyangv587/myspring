@@ -6,6 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 
 @Service("baseService")
+@PropertySource("classpath:application.properties")
 public class BaseServiceImpl implements BaseService {
 
     @Value("${name}")
@@ -28,5 +29,6 @@ public class BaseServiceImpl implements BaseService {
     @Override
     public void saveUser() {
         System.out.println("save user" + id);
+        System.out.println(1/0);
     }
 }
