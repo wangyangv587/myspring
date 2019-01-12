@@ -31,7 +31,7 @@ public class TestShiro {
         }
 
         //输出用户是否已经登录
-        System.out.println("subject.isAuthenticated() =  " + subject.isAuthenticated());
+        System.out.println("subject.isAuthenticated() = " + subject.isAuthenticated());
 
         //6、退出
         subject.logout();
