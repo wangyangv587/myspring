@@ -9,12 +9,14 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
 import org.junit.Test;
 
+import java.io.File;
+
 public class TestShiro {
 
     @Test
     public void test01(){
         //1、获取SecurityManager工厂，此处使用Ini配置文件初始化SecurityManager
-        Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro.ini");
+        Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro" + File.separator +"shiro.ini");
         //2、得到SecurityManager实例 并绑定给SecurityUtils
         SecurityManager securityManager = factory.getInstance();
         SecurityUtils.setSecurityManager(securityManager);

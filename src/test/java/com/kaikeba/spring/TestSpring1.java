@@ -1,4 +1,4 @@
-package com.kaikeba;
+package com.kaikeba.spring;
 
 import com.kaikeba.config.spring.SpringConfig;
 import com.kaikeba.config.spring.SpringConfig1;

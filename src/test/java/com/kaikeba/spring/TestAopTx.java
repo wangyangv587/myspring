@@ -1,4 +1,4 @@
-package com.kaikeba;
+package com.kaikeba.spring;
 
 import com.kaikeba.service.AccountService;
 import org.junit.Test;

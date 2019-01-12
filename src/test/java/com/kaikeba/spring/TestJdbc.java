@@ -1,4 +1,4 @@
-package com.kaikeba;
+package com.kaikeba.spring;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
