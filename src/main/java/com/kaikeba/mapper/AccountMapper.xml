@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kaikeba.mapper.AccountMapper">
+
+    <select id="queryMoney" parameterType="string" resultType="double">
+        select money from account where name=#{name}
+    </select>
+    <update id="updateMoney" parameterType="map">
+        update account set money = #{money} where name=#{name}
+    </update>
+    <insert id="insertAccount" parameterType="map">
+        insert into account(name,money)values(#{name},#{money})
+    </insert>
+</mapper>
