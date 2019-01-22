@@ -4,6 +4,8 @@ import com.kaikeba.service.BaseService;
 import com.kaikeba.service.impl.BaseServiceImpl;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.function.Consumer;
 
 /**
@@ -16,5 +18,6 @@ public class App {
         BaseService baseService = context.getBean(BaseServiceImpl.class);
         String login = baseService.login("yangw", "123456");
         System.out.println("login = " + login);
+        List<String> strings = Collections.singletonList("");
     }
 }
